@@ -4,6 +4,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 module.exports = {
   mode: 'development',
   entry: './src/index.js',
+  devServer: { port: 3000 },
   resolve: {
     fallback: {
       fs: false,
@@ -15,6 +16,8 @@ module.exports = {
     filename: 'main.js',
     path: path.resolve(__dirname, 'dist')
   },
+
+ 
 
   plugins: [
     new HtmlWebpackPlugin({
