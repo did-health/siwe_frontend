@@ -7,4 +7,8 @@ steps:
 - name: node
   entrypoint: npx
   args: ['webpack']
+ # Run custom commands
+- name: node
+  entrypoint: npx
+  args: ['serve']
 # [END cloudbuild_npm_node]
