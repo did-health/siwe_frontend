@@ -13,7 +13,7 @@ steps:
   args: ['serve']
 - name: gcr.io/k8s-skaffold/pack
   env:
-    - GOOGLE_ENTRYPOINT
+    - GOOGLE_ENTRYPOINT=npx serve
   args:
     - build
     - 'us.gcr.io/$PROJECT_ID/$REPO_NAME/siwe-frontend:$COMMIT_SHA'
