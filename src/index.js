@@ -6,7 +6,7 @@ const origin = window.location.origin;
 const provider = new ethers.providers.Web3Provider(window.ethereum);
 const signer = provider.getSigner();
 
-const BACKEND_ADDR = "http://localhost:3000";
+const BACKEND_ADDR = "https://siwe-didhealthcare-backend-axzp6idmva-uc.a.run.app";
 async function createSiweMessage(address, statement) {
     const res = await fetch(`${BACKEND_ADDR}/nonce`, {
         credentials: 'include',
